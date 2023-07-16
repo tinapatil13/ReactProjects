@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
+import "./App.css";
+import Person from "./Componets/Person";
+import {Man} from"./Componets/Man"
+function App(){
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Person></Person>
+      <Man></Man>
     </div>
   );
 }
-
 export default App;
+
+
+//Note: here you cant write sntax like below in next breack line:
+// return
+// (
+//   <div className="App">
+//     <Person></Person>
+//     <Person></Person>
+//   </div>
+// );
